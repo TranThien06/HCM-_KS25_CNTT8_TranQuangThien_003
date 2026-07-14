@@ -147,7 +147,7 @@ class CourseRegistrationManager:
                 else:
                     print("Lựa chọn không hợp lệ")
                     return
-            print("Không tìm thấy khóa học")
+        print("Không tìm thấy khóa học")
     # 
         # --- Chức năng 5. Tìm kiếm theo tên gần đúng ---
     # def search_registration(self):
@@ -157,13 +157,12 @@ class CourseRegistrationManager:
     #         print(" Lỗi: Từ khóa tìm kiếm không được để trống!")
     #         return
 
-    #     results = [r for r in self.registrations if keyword in r.student_name.lower() and r.course_name.lower()]
-    #     for r in self.registrations:
-    #         if results:
-    #             print(f"\n Kết quả tìm kiếm cho tên học viên '{keyword}':")
-    #             print(f"{r.student_name:<20} | {r.course_name:<20}")
-    #         else:
-    #             print(" Không tìm thấy khóa học phù hợp.")
+    #     results = [r for r in self.registrations if keyword in r.student_name.lower()]
+    #     if results:
+    #         print(f"\n Kết quả tìm kiếm cho tên học viên '{keyword}':")
+    #         print(results)
+    #     else:
+    #         print(" Không tìm thấy khóa học phù hợp.")
                 
 manager = CourseRegistrationManager()
 manager.registrations.append(CourseRegistration("JU01", "Trần Quang Thiện", "Python", 6000000, 2000000, 1000000))    
